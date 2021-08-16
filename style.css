@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+.main-box {
+  display: grid;
+  background: white;
+  font-family: "Red Hat Display", sans-serif;
+  width: 360px;
+  margin: 6% auto;
+  border-radius: 15px;
+}
+.main-img > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.content-box {
+  padding: 20px 40px 20px 40px ;
+}
+.title {
+  text-align: center;
+}
+.main-text {
+  text-align: center;
+  padding: 0 15px 0 5px;
+  line-height: 1.5em;
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(224, 23%, 55%);
+}
+
+.current-plan {
+  display: flex;
+  background: hsl(225, 100%, 98%);
+  align-items: center;
+  height: 60px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+}
+.current-plan > img {
+  width: 15%;
+  margin-right: 20px;
+}
+.current-plan > :nth-child(3) {
+  flex-grow: 8;
+  text-align: end;
+}
+.plano :nth-child(1) {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.plano :nth-child(2) {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+}
+.change > a {
+  font-weight: 800;
+  font-size: 0.9em;
+  color: hsl(245, 75%, 52%);
+  text-decoration: none, underline;
+}
+.change > a:hover{
+    color: hsl(246, 51%, 71%);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.plano > p {
+  margin: 0;
+  padding: 0;
+}
+.payment-ok > a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    height: 45px;
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    margin-top: 30px;
+    box-shadow: 0 10px 18px #b9b8b8;
+    border-radius: 15px;
+}
+.payment-ok > a:hover {
+    background: hsl(245, 64%, 63%);
+    color: hsl(225, 100%, 98%);
+    transition: 0.5s;
+}
+.payment-cancel > a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    height: 45px;
+    margin-top: 30px;
+    color: hsl(245, 75%, 52%);
+}
+.payment-cancel > a:hover{
+    color: hsl(246, 80%, 23%);
+    transition: 0.5s;
+}
+@media (max-width: 390px){
+    .main-box{
+      width: 90%;
+    }
+    .content-box {
+        padding: 10px 25px 10px 25px ;
+      }
+}
